@@ -151,41 +151,133 @@
       </nav>
     </div>
     <!-- HERO -->
-    <div class="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0 mt-20">
-      <div
-        class="flex flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl"
-      >
-        <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-          <div class="max-w-xl mb-6">
-            <h2
-              class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+    <!-- This is an example component -->
+    <div class="w-full mx-auto">
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div
+          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96 z-0"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <span
+              class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+              >First Slide</span
             >
-              Kytos Salud Integral
-            </h2>
-            <p class="text-base text-gray-700 md:text-lg">
-              Un nuevo y unico espacio interdisciplinario de salud y actividad
-              fisica en Mar del Plata
-            </p>
+            <img
+              src="./img/oie_3wSDJH199s3g.jpg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
           </div>
-          <div class="flex flex-col items-center md:flex-row">
-            <a
-              href="/"
-              aria-label=""
-              class="inline-flex items-center font-semibold bg-blue-300 rounded-md p-2"
-              >Saber mas</a
-            >
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
           </div>
         </div>
+        <!-- Slider indicators -->
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
+        </button>
       </div>
-      <div
-        class="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0"
-      >
-        <img
-          class="w-[70%] h-56 rounded-lg shadow-lg lg:h-full mx-auto"
-          src="./img/logo.jpg"
-          alt=""
-        />
-      </div>
+
+      <p class="mt-5">
+        This carousel slider component is part of a larger, open-source library
+        of Tailwind CSS components. Learn more by going to the official
+        <a
+          class="text-blue-600 hover:underline"
+          href="https://flowbite.com/docs/getting-started/introduction/"
+          target="_blank"
+        >
+          Flowbite Documentation </a
+        >.
+      </p>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>
     <!-- ABOUT US -->
     <div class="my-20 flex p-10">
@@ -214,23 +306,23 @@
     </div>
     <!-- HERO 2 -->
     <div
-      class="flex flex-col mt-10 w-full py-16 space-y-6 lg:h-[38rem] lg:py-16 lg:flex-row lg:items-center bg-blue-300"
+      class="flex flex-col mt-10 w-full py-16 space-y-6 lg:h-[38rem] lg:py-16 lg:flex-row lg:items-center bg-green-50"
     >
       <div class="w-full lg:w-1/2">
-        <div class="bg-white rounded-lg p-5">
+        <div class="bg-white rounded-lg p-5 shadow-2xl">
           <h2
             class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none text-center"
           >
             Especialidades
           </h2>
-          <p class="mt-4 font-xl font-semibold text-left mx-8">
+          <p class="text-base text-gray-700 md:text-lg mx-8 w-[50%] h-[50%]">
             Contamos con un equipo de diversos profesionales especializados en
             diversas areas, entre las que se encuentran las siguientes:
           </p>
           <div class="grid gap-6 mt-8 sm:grid-cols-2">
             <div class="flex items-center text-black px-3">
               <svg
-                fill="#000000"
+                fill="black"
                 height="105px"
                 width="105px"
                 version="1.1"
@@ -527,7 +619,7 @@
     </div>
     <!-- GRID PICS -->
     <h2
-      class="max-w-lg mt-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
+      class="max-w-lg mt-40 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
     >
       Nuestro espacio
     </h2>
@@ -561,9 +653,49 @@
         <img class="h-auto rounded-lg" src="./img/espacio8.jpeg" alt="" />
       </div>
     </div>
+    <!-- GOOGLE MAPS LOCATATION -->
+    <div class="md:flex mt-32">
+      <div>
+        <h3
+          class="max-w-lg my-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
+        >
+          Donde nos encontras?
+        </h3>
+        <button
+          href=""
+          class="text-indigo-700 border border-blue-300 py-4 px-6 rounded-xl inline-flex items-center h-[10%] w-[40%]"
+        >
+          Contactanos
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            class="w-6 h-6 ml-2"
+          >
+            <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="pb-[50%] relative w-[30%] mx-auto">
+        <iframe
+          class="h-[100%] w-[100%] absolute left-0 top-0 rounded-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.7467002753674!2d-57.56414512336222!3d-38.05298804774919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de0ce1724e2f%3A0x83c49bddd4064a19!2sAv.%20Edison%202044%2C%20B7603%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1705457206341!5m2!1sen!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="mt-32 bg-blue-300 h-96 text-black">
+    <footer class="bg-blue-300 h-96 text-black">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
@@ -598,6 +730,14 @@
                 Edison 2044, Mar del Plata
               </a>
             </div>
+            <p class="text-black font-bold tracking-wide text-black">
+              Nuestros horarios
+            </p>
+            <div class="flex">
+              <p class="mr-1 text-black">
+                Lunes a viernes de 8 hrs a 12 hrs - 16 hrs a 20 hrs
+              </p>
+            </div>
           </div>
           <div>
             <span class="text-black font-bold tracking-wide text-black"
@@ -621,6 +761,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
   </body>
 </html>
