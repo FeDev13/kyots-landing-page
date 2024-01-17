@@ -7,16 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/main.css" />
-
-    <title>eDoc</title>
+    <link rel="icon" href="./img/logo.jpg" type="image/icon type" />
+    <title>Kytos</title>
     <style>
       table {
         animation: transitionIn-Y-bottom 0.5s;
       }
     </style>
   </head>
-  <body class="bg-blue-100">
-    <div class="mx-auto mt-10 flex justify-between px-10">
+  <body class="bg-white">
+    <div
+      class="mx-auto mt-10 flex justify-between px-10 top-0 sticky z-10 bg-white"
+    >
       <nav class="border-gray-200 px-2 mb-10">
         <div
           class="container mx-auto flex flex-wrap items-center justify-between"
@@ -24,7 +26,7 @@
           <img
             src="./img/logo.jpg"
             alt="logo kytos"
-            class="w-[10%] rounded-lg"
+            class="rounded-lg w-[50%] md:w-[10%]"
           />
           <div class="flex md:order-2">
             <button
@@ -66,7 +68,7 @@
             id="mobile-menu-3"
           >
             <ul
-              class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium"
+              class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-md md:font-medium"
             >
               <li>
                 <a
@@ -97,6 +99,52 @@
                   >Profesionales</a
                 >
               </li>
+              <li>
+                <a
+                  aria-label="Chat on WhatsApp"
+                  href="https://wa.me/542235915750"
+                >
+                  <svg
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 48 48"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>Whatsapp-color</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        id="Icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Color-"
+                          transform="translate(-700.000000, -360.000000)"
+                          fill="#67C15E"
+                        >
+                          <path
+                            d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"
+                            id="Whatsapp"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -123,7 +171,7 @@
             <a
               href="/"
               aria-label=""
-              class="inline-flex items-center font-semibold text-white bg-blue-900 rounded-md p-2"
+              class="inline-flex items-center font-semibold bg-blue-300 rounded-md p-2"
               >Saber mas</a
             >
           </div>
@@ -133,42 +181,88 @@
         class="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0"
       >
         <img
-          class="w-[70%] h-56 rounded-lg shadow-lg lg:h-full"
-          src="./img/oie_3wSDJH199s3g.jpg"
+          class="w-[70%] h-56 rounded-lg shadow-lg lg:h-full mx-auto"
+          src="./img/logo.jpg"
           alt=""
         />
       </div>
     </div>
+    <!-- ABOUT US -->
+    <div class="my-20 flex p-10">
+      <div>
+        <h1
+          class="text-center max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none mx-auto"
+        >
+          Quienes somos?
+        </h1>
 
+        <p class="text-base text-gray-700 md:text-lg mx-auto w-[50%] h-[50%]">
+          KYTOS es un centro de kinesiología especializado en Rehabilitación
+          deportiva, postural y orientado hacia las técnicas manuales. El
+          abarcar un abanico de especialidades, tiene por objetivo poner a
+          disposición de cada paciente múltiples posibilidades para el cuidado y
+          su recuperación. Desde el inicio nos diferenciamos por contar con
+          profesionales de excelencia, comprometidos con la salud …
+        </p>
+      </div>
+
+      <img
+        src="./img/oie_3wSDJH199s3g.jpg"
+        alt="logo kytos"
+        class="w-[60%] mx-auto"
+      />
+    </div>
+    <!-- HERO 2 -->
     <div
-      class="container flex flex-col mt-56 px-20 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center"
+      class="flex flex-col mt-10 w-full py-16 space-y-6 lg:h-[38rem] lg:py-16 lg:flex-row lg:items-center bg-blue-300"
     >
       <div class="w-full lg:w-1/2">
-        <div class="lg:max-w-lg">
+        <div class="bg-white rounded-lg p-5">
           <h2
-            class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+            class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none text-center"
           >
             Especialidades
           </h2>
-          <p class="mt-4 text-black">
+          <p class="mt-4 font-xl font-semibold text-left mx-8">
             Contamos con un equipo de diversos profesionales especializados en
-            las siguientes areas:
+            diversas areas, entre las que se encuentran las siguientes:
           </p>
           <div class="grid gap-6 mt-8 sm:grid-cols-2">
             <div class="flex items-center text-black px-3">
               <svg
-                class="w-5 h-5 mx-3"
+                fill="#000000"
+                height="105px"
+                width="105px"
+                version="1.1"
+                id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 457.995 457.995"
+                xml:space="preserve"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M159.456,273.946l31.567,0.196l-34.62-35.763l60.023,38.559c0.005,0.003,0.009,0.005,0.014,0.008 c4.844,3.105,10.893,3.491,15.99,1.257l62.154-27.256c9.061-3.972,12.927-14.916,8.035-23.779 c-4.193-7.621-13.603-10.875-21.679-7.335l-53.812,23.598l-54.355-34.918l53.506,17.485l48.114-21.099 c16.825-7.378,36.477,0.28,43.862,17.12c7.352,16.766-0.224,36.454-17.12,43.862c-11.214,4.918-8.788,3.854-20.108,8.818 c16.881,0.105,19.466,0.273,24.229-0.171c9.258-0.863,16.258-5.842,19.472-14.42l26.403-70.465 c5.777,7.277,54.071,68.108,60.256,75.899c7.386,9.306,20.921,10.862,30.227,3.473c9.306-7.388,10.86-20.921,3.472-30.227 l-83.905-105.689c-4.821-6.072-12.544-9.08-20.197-7.875c-7.66,1.207-14.078,6.442-16.799,13.703 c-2.338,6.241-17.167,45.816-20.692,55.223c-0.607-0.022-142.98-5.298-143.588-5.298c-11.584,0-20.998,9.356-21.083,20.93 l-0.316,42.925C138.417,264.353,147.804,273.874,159.456,273.946z"
+                        ></path>
+                        <path
+                          d="M79.911,272.603c22.085,0.137,39.977-17.695,40.113-39.619c0.136-21.915-17.523-39.976-39.619-40.113 c-22.018-0.136-39.977,17.602-40.113,39.619C40.156,254.508,57.894,272.467,79.911,272.603z"
+                        ></path>
+                        <path
+                          d="M439.582,296.207H18.413C8.244,296.207,0,304.451,0,314.62s8.244,18.413,18.413,18.413h421.169 c10.169,0,18.413-8.244,18.413-18.413S449.751,296.207,439.582,296.207z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
               </svg>
 
               <span class="mx-3">kinesiologia</span>
@@ -176,37 +270,77 @@
 
             <div class="flex items-center text-black">
               <svg
-                class="w-5 h-5 mx-3"
+                fill="#000000"
+                height="105px"
+                width="105px"
+                version="1.1"
+                id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 399.421 399.421"
+                xml:space="preserve"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M390.421,90.522h-25.905c-0.123-0.003-0.249-0.003-0.372,0h-25.901c-4.971,0-9,4.029-9,9s4.029,9,9,9h17.087v19.085 l-170.319,64.885H95.949l-22.765-31.203h14.013c4.971,0,9-4.029,9-9s-4.029-9-9-9H55.684c-0.144-0.004-0.287-0.004-0.431,0H35.021 c-4.971,0-9,4.029-9,9s4.029,9,9,9h15.882l22.765,31.203H9c-4.971,0-9,4.029-9,9v98.409c0,4.971,4.029,9,9,9h42.09 c4.971,0,9-4.029,9-9v-47.32h253.151v47.32c0,4.971,4.029,9,9,9h42.09c4.971,0,9-4.029,9-9v-98.409c0-0.063,0-0.127-0.002-0.191 v-67.284c0.003-0.139,0.003-0.278,0-0.418v-25.076h17.091c4.971,0,9-4.029,9-9S395.392,90.522,390.421,90.522z M355.33,146.869 v45.623H235.572L355.33,146.869z M42.09,290.901H18v-38.32h24.09V290.901z M355.332,290.901h-24.09v-38.32h24.09V290.901z M355.332,234.581h-33.09H18v-24.089h73.28c0.068,0.001,0.135,0.001,0.203,0h94.981c0.137,0.003,0.273,0.003,0.41,0h168.458V234.581 z"
+                  ></path>
+                </g>
               </svg>
 
-              <span class="mx-3">Terapia ocupacional</span>
+              <span class="mx-3">Pilates</span>
             </div>
 
             <div class="flex items-center text-black -px-3">
               <svg
-                class="w-5 h-5 mx-3"
+                fill="#000000"
+                height="105px"
+                width="105px"
+                version="1.1"
+                id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 460.042 460.042"
+                xml:space="preserve"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M287.523,224.484v-27.015l-22.807,3.276c-6.099,0.879-12.209-0.249-17.568-3.191c-1.118,2.036-2.395,3.971-3.804,5.8 h3.696C263.673,203.354,278.477,211.597,287.523,224.484z"
+                        ></path>
+                        <circle cx="245.451" cy="33.06" r="33.06"></circle>
+                        <path
+                          d="M152.77,370.686l0.571-0.284c-0.822-0.771,1.507,1.574-27.72-28.149l-6.049,3.006c-9.159,4.55-12.99,15.597-8.614,24.84 l37.48,79.196c4.436,9.376,15.633,13.371,24.997,8.938c9.372-4.435,13.373-15.626,8.938-24.997L152.77,370.686z"
+                        ></path>
+                        <path
+                          d="M289.957,345.259l-5.913-2.938c-28.95,29.441-26.885,27.368-27.722,28.148l0.437,0.217l-29.601,62.55 c-4.436,9.371-0.434,20.562,8.938,24.997c9.363,4.433,20.56,0.439,24.997-8.938l37.479-79.196 C302.946,360.855,299.116,349.809,289.957,345.259z"
+                        ></path>
+                        <path
+                          d="M226.42,361.277c6.16,6.059,16.066,5.973,22.122-0.186l37.123-37.753c3.266-3.32,4.881-7.923,4.408-12.556 c-0.688-6.739-5.404-52.971-6.028-59.08c-0.558-19.915-16.982-35.975-37.005-35.975h-18.399 c-6.216,3.271-13.285,5.132-20.784,5.132c-7.335,0-14.482-1.817-20.784-5.132h-24.382c-20.023,0-36.447,16.06-37.005,35.975 c-0.623,6.109-5.34,52.34-6.028,59.08c-0.472,4.633,1.143,9.236,4.408,12.556l37.123,37.753 c6.057,6.161,15.961,6.243,22.122,0.186s6.244-15.961,0.186-22.122l-31.969-32.511c5.795-56.801,5.422-52.836,5.429-53.927 c0.009-1.759,1.439-3.178,3.197-3.173c1.758,0.005,3.18,1.431,3.18,3.189v48.582l28.829,29.318 c5.498,5.592,8.142,12.919,7.961,20.184h9.482c-0.181-7.266,2.463-14.593,7.961-20.184l28.625-29.111V252.96 c0-1.772,1.401-3.227,3.172-3.292c1.771-0.066,3.278,1.28,3.408,3.047c0,0.001,0,0.001,0,0.001 c0.08,1.089,0.699,7.348,5.429,53.928l-31.969,32.511C220.176,345.316,220.26,355.221,226.42,361.277z"
+                        ></path>
+                        <path
+                          d="M207.858,143.645c-17.905,0-32.421,14.515-32.421,32.421s14.515,32.421,32.421,32.421 c13.296,0,24.717-8.008,29.719-19.46c-2.534-3.565-4.277-7.742-4.93-12.291c-0.867-6.035,0.206-12.05,3.027-17.327 C230.006,149.966,219.671,143.645,207.858,143.645z"
+                        ></path>
+                        <path
+                          d="M348.171,153.161l-0.018-0.027l-0.061-0.091c-5.438-8.107-40.839-60.893-46.492-69.321 c-2.961-4.416-7.93-7.066-13.247-7.066c-2.636,0,12.086,0-85.805,0c-1.811,0-3.607,0.308-5.314,0.911l-62.171,21.966 c-8.975,3.171-13.183,13.451-9.04,21.998l28.178,58.134c2.153,4.442,6.098,7.425,10.543,8.522 c-1.087-3.859-1.681-7.922-1.681-12.123c0-11.088,4.058-21.24,10.756-29.07l-11.306-23.324l40.518-14.317v22.181 c1.586-0.171,3.195-0.264,4.826-0.264c14.872,0,28.066,7.291,36.218,18.479c3.674-2.664,7.962-4.416,12.581-5.079l30.867-4.433 v-20.231c12.834,19.136,10.648,15.876,20.023,29.855l-48.241,6.929c-10.569,1.519-15.567,10.139-14.412,18.184 c1.252,8.719,9.375,14.773,18.057,13.521l74.24-10.663C348.616,176.196,354.801,163.084,348.171,153.161z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
               </svg>
 
               <span class="mx-3">RPG</span>
@@ -214,18 +348,35 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                class="w-5 h-5 mx-3"
+                fill="#000000"
+                height="117px"
+                width="117px"
+                version="1.1"
+                id="_x31_"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 128 128"
+                xml:space="preserve"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <polygon
+                      points="15,83.2 15,60.7 4.8,60.7 4.8,116 15,116 15,93.3 113,93.3 113,116 123.2,116 123.2,93.3 123.2,83.2 "
+                    ></polygon>
+                    <path
+                      d="M27.6,80.2c4.7,0,8.6-3.8,8.6-8.6c0-3.6-2.3-6.7-5.5-8l2.8-7.1c0.1-0.3,0-0.5-0.3-0.6c-0.3-0.1-0.5,0-0.6,0.3l-2.8,7.2 h-0.1c-0.5-0.1-1.1-0.2-1.6-0.3l1.3-7.3c0-0.3-0.1-0.5-0.4-0.6c-0.3-0.1-0.5,0.1-0.6,0.4l-1.3,7.5c-0.3,0-0.6,0-0.9,0.1l-2-7.2 c-0.1-0.3-0.3-0.4-0.6-0.4c-0.3,0.1-0.4,0.3-0.4,0.6l1.9,7.1c-3.5,1-6.1,4.3-6.1,8.2C19,76.4,22.8,80.2,27.6,80.2z"
+                    ></path>
+                    <path
+                      d="M43.1,79.2c0.1,0,32.2,0,32.2,0c2,0,3.8-1.7,3.8-3.8c0-2-1.7-3.8-3.8-3.8H51.1c-0.6,0-1.1-0.4-1.1-1.1s0.4-1.1,1.1-1.1 h24.2c1.4,0,2.6,0.5,3.8,1.3c1.3,1.1,2.1,2.6,2.1,4.6c0,0.5-0.1,1.1-0.2,1.6h35.6c3,0,5.4-2.4,5.4-5.4s-2.4-5.4-5.4-5.4h-24 l2.7-6.8c0.1-0.3,0-0.5-0.3-0.6c-0.3-0.1-0.5,0-0.6,0.3l-2.9,7.2h-0.1v0.1l-0.2-7.8c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5 l0.2,7.6l-0.1,0h-2.2l-2-7.4c-0.1-0.3-0.3-0.4-0.6-0.4c-0.3,0.1-0.4,0.3-0.4,0.6l2,7.2L87,66.2h-9.9c-1.1-1.4-2.6-2.5-4.4-2.9 c-1.4-0.3-2.7-0.6-4.1-0.9h-0.1l1.4-7.4c0-0.3-0.1-0.5-0.4-0.6c-0.3-0.1-0.5,0.1-0.6,0.4l-1.4,7.4c-0.7-0.1-1.3-0.2-2-0.3l0.3-7.6 c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5l-0.3,7.5c-1.3-0.2-2.6-0.3-4-0.4l0.2-6.6c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5 l-0.2,6.5c-1-0.1-2.1-0.1-3.1-0.1l-1.2-7.7c0-0.3-0.3-0.5-0.6-0.4c-0.3,0-0.5,0.3-0.4,0.6l1.2,7.5c-0.4,0-1.4,0-1.5,0l-1.7-7.1 c-0.1-0.3-0.3-0.4-0.6-0.4c-0.3,0.1-0.4,0.3-0.4,0.6l1.7,6.9h-0.1c-0.1,0-0.3,0-0.3,0c-0.7,0-1.4,0.1-2.1,0.2l-3.3-6.5 c-0.1-0.2-0.4-0.3-0.7-0.2c-0.2,0.1-0.3,0.4-0.2,0.7l3.2,6.3c-5.7,1.3-10,5.9-11,11.6c0,0-0.1,0.9-0.1,1.1 C38.2,77,40.3,79.2,43.1,79.2z"
+                    ></path>
+                  </g>
+                </g>
               </svg>
 
               <span class="mx-3">Acupuntura</span>
@@ -233,18 +384,43 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                class="w-5 h-5 mx-3"
+                fill="#000000"
+                height="105px"
+                width="105px"
+                version="1.1"
+                id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 460.425 460.425"
+                xml:space="preserve"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M240.754,266.877c7.564,2.732,60.222,21.753,66.185,23.907c4.943,1.784,10.207,0.756,14.07-2.246 c2.885-1.274,3.495-1.918,12.95-8.945c-8.418,1.88-6.434,1.436-14.696,3.281c-12.276,2.744-24.511-4.986-27.263-17.309 c-2.736-12.254,4.999-24.513,17.309-27.262l35.165-7.852l22.495-31.376l-15.892,41.361c-18.427,4.115-17.456,3.898-39.331,8.782 c-6.365,1.422-10.211,7.73-8.831,13.909c0.025,0.113,0.06,0.22,0.088,0.331c1.551,6.107,7.676,9.875,13.821,8.5l45.427-10.143 c3.808-0.85,6.937-3.549,8.337-7.192l17.548-45.674l-4.635,33.822l17.377-12.915c6.411-4.765,7.745-13.837,2.97-20.246 l-17.589-23.609c-4.868-6.534-14.184-7.758-20.575-2.696l-84.379,66.84c-19.872-7.178-12.981-4.689-35.896-12.966 c-3.455-1.248-7.253-1.163-10.647,0.241l-77.852,32.17c-7.532,3.112-11.114,11.74-8.002,19.271 c3.111,7.53,11.737,11.115,19.272,8.003L240.754,266.877z"
+                        ></path>
+                        <path
+                          d="M389.582,171.12c9.439,8.399,23.852,9.389,34.469,1.499c12.12-9.008,14.643-26.135,5.635-38.255 s-26.135-14.643-38.255-5.635C377.542,139.051,376.597,159.564,389.582,171.12z"
+                        ></path>
+                        <path
+                          d="M456.725,224.775c-5.802-7.217-16.353-8.364-23.574-2.563l-102.81,82.646H184.669c-9.261,0-16.768,7.507-16.768,16.768 c0,9.261,7.507,16.768,16.768,16.768h6.536v11.624c0,6.194,5.021,11.214,11.214,11.214c6.194,0,11.214-5.02,11.214-11.214 v-11.624h95.697v11.624c0,6.194,5.021,11.214,11.215,11.214c6.193,0,11.215-5.02,11.215-11.214v-11.624h4.485 c3.821,0,7.527-1.305,10.506-3.699l107.411-86.345C461.38,242.547,462.528,231.992,456.725,224.775z"
+                        ></path>
+                        <circle cx="81.216" cy="125.269" r="26.075"></circle>
+                        <path
+                          d="M121.219,255.01c1.425-1.224,2.583-2.8,3.31-4.674c2.361-6.082-0.655-12.927-6.737-15.289l-38.094-14.79l-8.216-37.415 l13.844,26.927l11.938,4.635l4.619-28.395c1.562-9.602-4.956-18.652-14.558-20.214l-26.939-4.382 c-12.632-3.577-22.634,3.783-24.279,13.897c-1.478,9.467-12.398,80.248-12.861,86.346c-0.333,4.345,1.335,8.379,4.221,11.208 H11.214C5.021,272.865,0,277.885,0,284.079v65.938c0,6.194,5.021,11.214,11.214,11.214c6.194,0,11.214-5.02,11.214-11.214v-18.44 h44.414v18.44c0,6.194,5.021,11.214,11.214,11.214c6.194,0,11.214-5.02,11.214-11.214c0-71.735,0.2-66.876-0.466-69.126 l13.493,1.033l-10.084,62.884c-1.24,7.731,4.022,15.002,11.752,16.243c7.752,1.239,15.005-4.04,16.243-11.752l12.524-78.089 C133.914,263.84,129.061,256.406,121.219,255.01z M66.843,316.624H22.429v-21.33h44.414V316.624z M58.795,250.16l-2.44-0.947 c-6.368-2.473-10.179-8.702-9.914-15.167l1.964-46.135l9.575,43.601c0.849,3.864,3.575,7.047,7.263,8.479l34.203,13.28 L58.795,250.16z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
               </svg>
 
               <span class="mx-3">Psicologia</span>
@@ -252,21 +428,90 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                class="w-5 h-5 mx-3"
+                width="105px"
+                height="105px"
+                viewBox="0 0 60.601004 60.601004"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                fill="#000000"
               >
-                <path
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>
+                    障害のある人・けが人優先設備; Priority facilities for
+                    injured people
+                  </title>
+                  <defs>
+                    <linearGradient osb:paint="solid">
+                      <stop
+                        offset="0"
+                        style="stop-color: #000000; stop-opacity: 1"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type
+                          rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                        ></dc:type>
+                        <dc:title
+                          >障害のある人・けが人優先設備; Priority facilities for
+                          injured people</dc:title
+                        >
+                        <dc:source
+                          >http://www.ecomo.or.jp/barrierfree/pictogram/data/zukigo_panfu_jis110.pdf</dc:source
+                        >
+                      </cc:work>
+                    </rdf:rdf>
+                  </metadata>
+                  <path
+                    d="m 7.7848777,56.032378 c -1.775,0 -3.21625,-1.44125 -3.21625,-3.21875 l 0,-45.0275003 c 0,-1.77625 1.44125,-3.2175 3.21625,-3.2175 l 45.0287503,0 c 1.7775,0 3.21875,1.44125 3.21875,3.2175 l 0,45.0275003 c 0,1.7775 -1.44125,3.21875 -3.21875,3.21875 l -45.0287503,0 z"
+                    style="
+                      fill: #ffffff;
+                      stroke: #000000;
+                      stroke-width: 0.60625005;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 4;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                      fill-opacity: 1;
+                    "
+                  ></path>
+                  <path
+                    d="m 30.29363,14.671126 c 1.775,0 3.215,-1.44 3.215,-3.21625 0,-1.7762503 -1.44,-3.2150003 -3.215,-3.2150003 -1.77625,0 -3.21625,1.43875 -3.21625,3.2150003 0,1.77625 1.44,3.21625 3.21625,3.21625"
+                    style="
+                      fill: #000000;
+                      fill-opacity: 1;
+                      fill-rule: nonzero;
+                      stroke: none;
+                    "
+                  ></path>
+                  <path
+                    d="m 23.044879,36.574877 -2.3875,-3.68375 c -0.17375,-0.26875 -0.27125,-0.59 -0.25875,-0.93125 l 0.2925,-8.01125 1.4875,0.1025 -0.29625,8.49375 1.435,0.12625 -0.2725,3.90375 z m 11.03,-20.65 c -1.2725,-0.19125 -2.57375,-0.2875 -3.89875,-0.2875 -1.325,0 -2.6275,0.09625 -3.89875,0.2875 -2.26,0.33625 -3.895,2.24375 -3.97,4.44875 l -0.0775,2.23 -3.99125,-0.275 -0.0225,0.32 c -0.04375,0.62125 0.42375,1.15875 1.04375,1.20125 l 0.46875,0.0325 -0.295,8.0425 c -0.01875,0.55 0.13625,1.065 0.41375,1.49125 l 3.08625,4.75625 -0.94125,13.4625 0.96625,0 1.915,-27.39625 0.90875,0.0625 c 0.62125,0.045 1.15875,-0.42375 1.20125,-1.0425 l 0.02375,-0.32125 -2.0325,-0.14125 0.055,-0.80125 2.83375,0.1975 -0.0775,1.1225 c -0.03625,0.51375 -0.27,0.9825 -0.6575,1.32125 -0.39125,0.33875 -0.8875,0.50375 -1.4025,0.46875 l -0.10625,-0.0075 -0.495,7.08375 1.19125,19.47625 3.3775,0 0,-17.3675 0.965,0 0,17.3675 3.37625,0 1.16125,-18.98 2.01375,0 0.82625,-11.81375 c 0.17125,-2.4075 -1.53625,-4.57625 -3.96125,-4.93875"
+                    style="
+                      fill: #000000;
+                      fill-opacity: 1;
+                      fill-rule: nonzero;
+                      stroke: none;
+                    "
+                  ></path>
+                </g>
               </svg>
 
-              <span class="mx-3">Psicopedagogia</span>
+              <span class="mx-3">Traumatologia</span>
             </div>
           </div>
         </div>
@@ -280,62 +525,45 @@
         />
       </div>
     </div>
-
-    <div class="grid grid-cols-2 gap-4 px-56 mt-20">
-      <h2
-        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
-      >
-        Nuestro espacio
-      </h2>
+    <!-- GRID PICS -->
+    <h2
+      class="max-w-lg mt-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
+    >
+      Nuestro espacio
+    </h2>
+    <p class="text-base text-gray-700 md:text-lg ml-10 text-left my-10">
+      En nuestra sede vas a encontrar aparatologia de ultima generacion en cada
+      consultorio asi como tambien espacios ambientados para la realizacion de
+      diversas actividades, como yoga y pilates
+    </p>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[70%] md:max-w-[70%] place-items-center mt-10 mx-auto"
+    >
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio2.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio2.jpeg" alt="" />
       </div>
       <div>
-        <img class="h-auto rounded-lg w-[50%]" src="./img/sum.jpeg" alt="" />
+        <img class="h-auto rounded-lg" src="./img/sum.jpeg" alt="" />
       </div>
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio4.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio4.jpeg" alt="" />
       </div>
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio5.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio5.jpeg" alt="" />
       </div>
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio6.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio6.jpeg" alt="" />
       </div>
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio7.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio7.jpeg" alt="" />
       </div>
       <div>
-        <img
-          class="h-auto rounded-lg w-[50%]"
-          src="./img/espacio8.jpeg"
-          alt=""
-        />
+        <img class="h-auto rounded-lg" src="./img/espacio8.jpeg" alt="" />
       </div>
     </div>
 
     <!-- FOOTER -->
-    <footer class="mt-32 bg-blue-900 h-96 text-white">
+    <footer class="mt-32 bg-blue-300 h-96 text-black">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
@@ -344,11 +572,11 @@
             <img src="./img/logo.jpg" class="w-[50%] rounded-lg" alt="" />
           </div>
           <div class="space-y-2 text-sm">
-            <p class="text-white font-bold tracking-wide text-gray-900">
+            <p class="text-black font-bold tracking-wide text-black">
               Contacto
             </p>
             <div class="flex">
-              <p class="mr-1 text-white">Telefono:</p>
+              <p class="mr-1 text-black">Telefono:</p>
               <a
                 href="tel:850-123-5021"
                 aria-label="Our phone"
@@ -359,27 +587,26 @@
             </div>
 
             <div class="flex">
-              <p class="mr-1 text-white">Direccion:</p>
+              <p class="mr-1 text-black">Direccion:</p>
               <a
-                href="https://www.google.com/maps"
+                href="https://www.google.com/maps/place/Av.+Edison+2044,+B7603+Mar+del+Plata,+Provincia+de+Buenos+Aires/@-38.052988,-57.5641451,17z/data=!3m1!4b1!4m6!3m5!1s0x9584de0ce1724e2f:0x83c49bddd4064a19!8m2!3d-38.0529923!4d-57.5615702!16s%2Fg%2F11kdlxwgtb?entry=ttu"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Our address"
-                title="Our address"
-                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                title="Nuestra direccion"
               >
                 Edison 2044, Mar del Plata
               </a>
             </div>
           </div>
           <div>
-            <span class="text-white font-bold tracking-wide text-gray-900"
+            <span class="text-black font-bold tracking-wide text-black"
               >Encontranos en</span
             >
             <div class="flex items-center mt-1 space-x-3">
               <a
-                href="/"
-                class="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+                href="https://www.instagram.com/kytossaludintegral/"
+                class="text-black transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
                   <circle cx="15" cy="15" r="4"></circle>
