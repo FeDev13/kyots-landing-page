@@ -347,6 +347,6 @@
         </div>
       </div>
     </footer>
-   
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </body>
 </html>
