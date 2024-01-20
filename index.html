@@ -86,9 +86,16 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="staff.php"
                   class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                   >Profesionales</a
+                >
+              </li>
+              <li>
+                <a
+                  href="specialties.php"
+                  class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
+                  >Especialidades</a
                 >
               </li>
               <li>
@@ -258,55 +265,70 @@
         </button>
       </div>
 
-      <p class="mt-5 uppercase text-center">
+      <h2 class="mt-5 uppercase text-center">
         Rehabilitacion deportiva. Pilates. RPG. Ortopedia
-      </p>
+      </h2>
       <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>
     <!-- ABOUT US -->
-    <div class="grid-cols-1 my-20 md:flex p-10">
-      <div class="shadow-2xl">
+    <div class="grid-cols-1 my-20 xl:flex p-10">
+      <div class="shadow-2xl p-8">
         <h1
-          class="text-center max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none mx-auto"
+          class="relative max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none mx-auto"
         >
-          Quienes somos?
+          Somos
+          <span
+            class="text-blue-500 uppercase absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 rounded-full"
+            >Kytos</span
+          >
         </h1>
 
-        <p class="text-base text-gray-700 md:text-lg mx-auto w-[50%] h-[50%]">
-          KYTOS es un centro de kinesiología especializado en Rehabilitación
-          deportiva, postural y orientado hacia las técnicas manuales. El
-          abarcar un abanico de especialidades, tiene por objetivo poner a
-          disposición de cada paciente múltiples posibilidades para el cuidado y
-          su recuperación. Desde el inicio nos diferenciamos por contar con
-          profesionales de excelencia, comprometidos con la salud …
+        <p
+          class="text-base text-gray-700 md:text-lg mx-auto w-[50%] h-[50%] my-20"
+        >
+          KYTOS es un centro de rehabilitación integral en el cual en paciente
+          puede encontrar diferentes alternativas según su caso, las cuales van
+          desde Rehabilitación deportiva, postural y técnicas manuales hasta
+          Terapia Ocupacional, Oftalmología, Psicología, Psicopedagogía,
+          Traumatología, Pilates, entre otras. El abarcar un diverso abanico de
+          especialidades, tiene como objetivo brindar a cada paciente múltiples
+          posibilidades para el cuidado y su recuperación. En nuestro espacio
+          los pacientes van a encontrar profesionales con gran experiencia y
+          dedicación por mejorar la calidad de vida del paciente
         </p>
       </div>
 
       <img
         src="./img/frente1.jpeg"
         alt="logo kytos"
-        class="w-full md:w-[60%] mx-auto rounded-lg"
+        class="w-full xl:w-[50%] mx-auto rounded-lg"
       />
     </div>
     <!-- HERO 2 -->
     <div
-      class="flex flex-col mt-10 w-full py-16 space-y-6 lg:h-[38rem] lg:py-16 lg:flex-row lg:items-center bg-green-50"
+      class="grid grid-cols-1 w-full py-16 space-y-6 lg:h-[38rem] lg:flex lg:py-16 lg:items-center xl:flex"
     >
-      <div class="w-full lg:w-1/2">
-        <div class="bg-white rounded-lg p-5 shadow-2xl">
-          <h2
-            class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none text-center"
+      <div class="w-full sm:w-[70%] lg:w-1/2 mx-auto">
+        <div class="bg-white rounded-lg p-20 shadow-2xl">
+          <div class="relative inline-block">
+            <span class="text-2xl md:text-3xl font-bold ml-10">
+              Especialidades
+            </span>
+            <span
+              class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 rounded-full ml-10"
+            ></span>
+          </div>
+          <p
+            class="text-base text-gray-700 md:text-lg mx-8 w-[50%] h-[50%] mt-8"
           >
-            Especialidades
-          </h2>
-          <p class="text-base text-gray-700 md:text-lg mx-8 w-[50%] h-[50%]">
             Contamos con un equipo de diversos profesionales especializados en
             diversas areas, entre las que se encuentran las siguientes:
           </p>
-          <div class="grid gap-6 mt-8 sm:grid-cols-2">
-            <div class="flex items-center text-black px-3">
+          <div class="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="items-center text-black px-3">
               <svg
-                fill="black"
+                class="md:w-[100%]"
+                fill="#0080ff"
                 height="105px"
                 width="105px"
                 version="1.1"
@@ -341,12 +363,12 @@
                 </g>
               </svg>
 
-              <span class="mx-3">kinesiologia</span>
+              <span class="mx-3">Kinesiologia</span>
             </div>
 
             <div class="flex items-center text-black">
               <svg
-                fill="#000000"
+                fill="#0080ff"
                 height="105px"
                 width="105px"
                 version="1.1"
@@ -374,7 +396,7 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                fill="#000000"
+                fill="#0080ff"
                 height="105px"
                 width="105px"
                 version="1.1"
@@ -424,7 +446,7 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                fill="#000000"
+                fill="##0080ff"
                 height="117px"
                 width="117px"
                 version="1.1"
@@ -460,7 +482,7 @@
 
             <div class="flex items-center text-black -px-3">
               <svg
-                fill="#000000"
+                fill="#0080ff"
                 height="105px"
                 width="105px"
                 version="1.1"
@@ -514,7 +536,7 @@
                 xmlns:svg="http://www.w3.org/2000/svg"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="#000000"
+                fill="#0080ff"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -569,7 +591,7 @@
                   <path
                     d="m 30.29363,14.671126 c 1.775,0 3.215,-1.44 3.215,-3.21625 0,-1.7762503 -1.44,-3.2150003 -3.215,-3.2150003 -1.77625,0 -3.21625,1.43875 -3.21625,3.2150003 0,1.77625 1.44,3.21625 3.21625,3.21625"
                     style="
-                      fill: #000000;
+                      fill: #0080ff;
                       fill-opacity: 1;
                       fill-rule: nonzero;
                       stroke: none;
@@ -578,7 +600,7 @@
                   <path
                     d="m 23.044879,36.574877 -2.3875,-3.68375 c -0.17375,-0.26875 -0.27125,-0.59 -0.25875,-0.93125 l 0.2925,-8.01125 1.4875,0.1025 -0.29625,8.49375 1.435,0.12625 -0.2725,3.90375 z m 11.03,-20.65 c -1.2725,-0.19125 -2.57375,-0.2875 -3.89875,-0.2875 -1.325,0 -2.6275,0.09625 -3.89875,0.2875 -2.26,0.33625 -3.895,2.24375 -3.97,4.44875 l -0.0775,2.23 -3.99125,-0.275 -0.0225,0.32 c -0.04375,0.62125 0.42375,1.15875 1.04375,1.20125 l 0.46875,0.0325 -0.295,8.0425 c -0.01875,0.55 0.13625,1.065 0.41375,1.49125 l 3.08625,4.75625 -0.94125,13.4625 0.96625,0 1.915,-27.39625 0.90875,0.0625 c 0.62125,0.045 1.15875,-0.42375 1.20125,-1.0425 l 0.02375,-0.32125 -2.0325,-0.14125 0.055,-0.80125 2.83375,0.1975 -0.0775,1.1225 c -0.03625,0.51375 -0.27,0.9825 -0.6575,1.32125 -0.39125,0.33875 -0.8875,0.50375 -1.4025,0.46875 l -0.10625,-0.0075 -0.495,7.08375 1.19125,19.47625 3.3775,0 0,-17.3675 0.965,0 0,17.3675 3.37625,0 1.16125,-18.98 2.01375,0 0.82625,-11.81375 c 0.17125,-2.4075 -1.53625,-4.57625 -3.96125,-4.93875"
                     style="
-                      fill: #000000;
+                      fill: #0080ff;
                       fill-opacity: 1;
                       fill-rule: nonzero;
                       stroke: none;
@@ -588,6 +610,137 @@
               </svg>
 
               <span class="mx-3">Traumatologia</span>
+            </div>
+            <div class="flex items-center text-black -px-3">
+              <svg
+                width="105px"
+                height="105px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z"
+                    stroke="#0080ff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z"
+                    stroke="#0080ff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+
+              <span class="mx-3">Oftalmología</span>
+            </div>
+            <div class="flex items-center text-black -px-3">
+              <svg
+                fill="#0080ff"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="105px"
+                height="105px"
+                viewBox="0 0 141 260"
+                enable-background="new 0 0 141 260"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M83.654,145.881v-13.429h7.394c12.075,0,21.863-9.788,21.863-21.863V95.076h7.565c3.07,0,5.191-3.071,4.105-5.942 L112.968,58.43c0,0-1.237-12.085-2.304-16.749C105.83,20.884,82.618,2,57.438,2C26.807,2,1.964,26.842,1.964,57.53 c0,16.34,7.048,30.994,18.295,41.156v46.868c-8.846,7.135-14.466,18.09-14.466,30.669V258h133.242v0 C139.034,213.135,117.146,165.465,83.654,145.881z M43.17,242.194c-4.75,0-8.601-3.851-8.601-8.601s3.851-8.601,8.601-8.601 c4.75,0,8.601,3.851,8.601,8.601S47.92,242.194,43.17,242.194z M43.17,209.843c-4.75,0-8.601-3.851-8.601-8.601 c0-4.75,3.851-8.601,8.601-8.601c4.75,0,8.601,3.851,8.601,8.601C51.77,205.992,47.92,209.843,43.17,209.843z M43.17,177.49 c-4.75,0-8.601-3.851-8.601-8.601c0-4.75,3.851-8.601,8.601-8.601c4.75,0,8.601,3.851,8.601,8.601 C51.77,173.64,47.92,177.49,43.17,177.49z M43.17,145.139c-4.75,0-8.601-3.851-8.601-8.601c0-4.75,3.851-8.601,8.601-8.601 c4.75,0,8.601,3.851,8.601,8.601C51.77,141.289,47.92,145.139,43.17,145.139z M43.17,112.788c-4.75,0-8.601-3.851-8.601-8.601 c0-4.75,3.851-8.601,8.601-8.601c4.75,0,8.601,3.851,8.601,8.601C51.77,108.938,47.92,112.788,43.17,112.788z M40.687,74.953 c-24.593-0.336-29.121-38.992-1.719-50.537c30.368-12.795,55.986,7.051,52.705,22.44c-1.285,6.028-13.444,12.207-25.475,18.094 C56.241,69.821,46.679,75.035,40.687,74.953z"
+                  ></path>
+                </g>
+              </svg>
+
+              <span class="mx-3">Neurología</span>
+            </div>
+            <div class="flex items-center text-black -px-3">
+              <svg
+                fill="#0080ff"
+                height="105px"
+                width="105px"
+                version="1.2"
+                baseProfile="tiny"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    id="XMLID_11_"
+                    d="M29.8,166.1c0.6-20-10.3-27.6-23.6-32.6C1.8,150.7,14,165,29.8,166.1"
+                  ></path>
+                  <path
+                    id="XMLID_10_"
+                    d="M32.8,76.7c8.5-18.2,1.4-29.4-8.8-39.3C13.3,51.4,18.8,69.4,32.8,76.7"
+                  ></path>
+                  <path
+                    id="XMLID_9_"
+                    d="M37.6,127.2c-0.6-20,10.3-27.6,23.6-32.6C65.6,111.8,53.4,126,37.6,127.2"
+                  ></path>
+                  <path
+                    id="XMLID_8_"
+                    d="M37.6,158.1c-0.6-20,10.3-27.6,23.6-32.6C65.6,142.7,53.4,156.9,37.6,158.1"
+                  ></path>
+                  <path
+                    id="XMLID_7_"
+                    d="M37.6,96.3c-0.6-20,10.3-27.6,23.6-32.6C65.6,80.9,53.4,95.2,37.6,96.3"
+                  ></path>
+                  <path
+                    id="XMLID_6_"
+                    d="M29.8,135.3c0.6-20-10.3-27.6-23.6-32.6C1.8,119.8,14,134.1,29.8,135.3"
+                  ></path>
+                  <path
+                    id="XMLID_5_"
+                    d="M29.8,104.4c0.6-20-10.3-27.6-23.6-32.6C1.8,89,14,103.2,29.8,104.4"
+                  ></path>
+                  <path
+                    id="XMLID_16_"
+                    d="M179.9,255.4H72.5l53.7-93L179.9,255.4z"
+                  ></path>
+                  <polygon
+                    id="XMLID_3_"
+                    points="14.2,192.1 241.7,130.2 238.3,117.7 10.8,179.6 "
+                  ></polygon>
+                  <path
+                    id="XMLID_2_"
+                    d="M174.7,0.6c0,0,1.7,32.8,30.4,30C205.1,30.7,208.4,3.2,174.7,0.6"
+                  ></path>
+                  <path
+                    id="XMLID_1_"
+                    d="M204.8,107.4c-3,4.3-8,7-13.6,7c-4.6,0-9.1-2.2-12.1-5.2c-6.2-6.8-14.2-21.9-14.2-21.9 c-4.5-9.1-6.9-16.2-6.9-23.4c0-15.2,12.3-28.4,27.6-28.4c7.5,0,14.3,3,19.3,7.9c5-4.9,11.8-7.9,19.3-7.9c15.3,0,27.6,13.2,27.6,28.4 c0,7.1-2.4,14.2-6.9,23.4c0,0-8,15.1-14.2,21.9c-3,3-7.5,5.2-12.1,5.2C212.8,114.4,207.8,111.6,204.8,107.4"
+                  ></path>
+                </g>
+              </svg>
+
+              <span class="mx-3">Nutrición</span>
             </div>
           </div>
         </div>
@@ -638,8 +791,8 @@
       </div>
     </div>
     <!-- GOOGLE MAPS LOCATATION -->
-    <div class="md:flex mt-32">
-      <div class="md:w-[50%]">
+    <div class="md:flex mt-32 shadow-2xl">
+      <div class="md:w-[50%] shadow-2xl">
         <h3
           class="w-[50%] my-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
         >
@@ -675,7 +828,7 @@
           ></g>
           <g id="SVGRepo_iconCarrier">
             <path
-              style="fill: #8ad5dd"
+              style="fill: #0080ff"
               d="M256,0C114.608,0,0,114.608,0,256c0,141.376,114.608,256,256,256s256-114.624,256-256 C512,114.608,397.392,0,256,0z"
             ></path>
             <g style="opacity: 0.2">
@@ -689,38 +842,40 @@
             ></polygon>
           </g>
         </svg>
-        <h2
-          class="w-[50%] my-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
-        >
-          Por qué elegir Kytos?
-        </h2>
-        <p class="w-[60%] text-left mx-auto mt-32">
-          Porque entre otros muchos beneficios, los profesionales que desempeñan
-          sus tareas en nuestro espacio estan respaldados por instituciones como
-          las que siguen a continuación:
-        </p>
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[70%] md:max-w-[70%] place-items-center mt-10 mx-auto"
-        >
-          <div>
-            <img
-              class="h-auto rounded-lg"
-              src="./img/resize_1505767991.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img class="h-auto rounded-lg" src="./img/logo-AAOT.png" alt="" />
-          </div>
-          <div>
-            <img
-              class="h-auto rounded-lg"
-              src="./img/Convoca-Distrito-x.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img class="h-auto rounded-lg" src="./img/oft.jpg" alt="" />
+        <div>
+          <h2
+            class="w-[50%] my-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mx-auto"
+          >
+            Por qué elegir Kytos?
+          </h2>
+          <p class="w-[60%] text-left mx-auto mt-32">
+            Porque entre otros muchos beneficios, los profesionales que
+            desempeñan sus tareas en nuestro espacio estan respaldados por
+            instituciones como las que siguen a continuación:
+          </p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[70%] md:max-w-[70%] place-items-center mt-10 mx-auto"
+          >
+            <div>
+              <img
+                class="h-auto rounded-lg"
+                src="./img/resize_1505767991.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img class="h-auto rounded-lg" src="./img/logo-AAOT.png" alt="" />
+            </div>
+            <div>
+              <img
+                class="h-auto rounded-lg"
+                src="./img/Convoca-Distrito-x.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img class="h-auto rounded-lg" src="./img/oft.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -740,7 +895,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-blue-300 h-96 text-black text-xl">
+    <footer class="bg-blue-900 h-[120%] text-white text-xl">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
@@ -749,27 +904,27 @@
             <img src="./img/logo.jpg" class="w-[50%] rounded-lg" alt="" />
           </div>
           <div class="space-y-2 text-sm">
-            <p class="text-black font-bold tracking-wide text-xl">Contacto</p>
+            <p class="text-white font-bold tracking-wide text-xl">Contacto</p>
             <div class="flex">
-              <p class="mr-1 text-black text-xl">Telefono:</p>
+              <p class="mr-1 text-white text-xl">Telefono:</p>
               <p class="text-xl">2235915750</p>
             </div>
 
             <div class="flex">
-              <p class="mr-1 text-black text-xl">Direccion:</p>
+              <p class="mr-1 text-white text-xl">Direccion:</p>
               <p class="text-xl">Edison 2044, Mar del Plata</p>
             </div>
-            <p class="text-black font-bold tracking-wide text-xl">
+            <p class="text-white font-bold tracking-wide text-xl">
               Nuestros horarios
             </p>
             <div class="flex">
-              <p class="mr-1 text-black text-xl">
+              <p class="mr-1 text-white text-xl">
                 Lunes a viernes de 8 hrs a 12 hrs - 16 hrs a 20 hrs
               </p>
             </div>
           </div>
           <div>
-            <span class="text-black font-bold tracking-wide text-black"
+            <span class="text-white font-bold tracking-wide"
               >Encontranos en</span
             >
             <div class="flex items-center mt-1 space-x-3">
