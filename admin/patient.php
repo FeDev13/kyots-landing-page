@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Patients</title>
+    <title>Pacientes</title>
     <style>
         .popup{
             animation: transitionIn-Y-bottom 0.5s;
@@ -52,7 +52,7 @@
                                     <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
                                 </td>
                                 <td style="padding:0px;margin:0px;">
-                                    <p class="profile-title">Administrator</p>
+                                    <p class="profile-title">Administrador</p>
                                     <p class="profile-subtitle">admin@edoc.com</p>
                                 </td>
                             </tr>
@@ -96,14 +96,14 @@
                 <tr >
                     <td width="13%">
 
-                    <a href="patient.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
+                    <a href="patient.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Atras</font></button></a>
                         
                     </td>
                     <td>
                         
                         <form action="" method="post" class="header-search">
 
-                            <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Patient name or Email" list="patient">&nbsp;&nbsp;
+                            <input type="search" name="search" class="input-text header-searchbar" placeholder="Buscar paciente por nombre o email" list="patient">&nbsp;&nbsp;
                             
                             <?php
                                 echo '<datalist id="patient">';
@@ -121,20 +121,20 @@
 ?>
                             
                        
-                            <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                            <input type="Submit" value="Buscar" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                         
                         </form>
                         
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
-                            Today's Date
+                            Hoy es
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
-                        date_default_timezone_set('Asia/Kolkata');
+                         date_default_timezone_set('America/Argentina/Buenos_Aires');
 
-                        $date = date('Y-m-d');
+                        $date = date('d-m-Y');
                         echo $date;
                         ?>
                         </p>
@@ -149,7 +149,7 @@
                 
                 <tr>
                     <td colspan="4" style="padding-top:10px;">
-                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">All Patients (<?php echo $list11->num_rows; ?>)</p>
+                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">Todos los pacientes (<?php echo $list11->num_rows; ?>)</p>
                     </td>
                     
                 </tr>
@@ -177,19 +177,19 @@
                                 <th class="table-headin">
                                     
                                 
-                                Name
+                                Nombre y apellido
                                 
                                 </th>
                                 <th class="table-headin">
                                     
                                 
-                                    NIC
+                                    DNI
                                     
                                 </th>
                                 <th class="table-headin">
                                 
                             
-                                Telephone
+                                Telefono
                                 
                                 </th>
                                 <th class="table-headin">
@@ -197,12 +197,12 @@
                                 </th>
                                 <th class="table-headin">
                                     
-                                    Date of Birth
+                                    Fecha de nacimiento
                                     
                                 </th>
                                 <th class="table-headin">
                                     
-                                    Events
+                                    Ver detalles
                                     
                                 </tr>
                         </thead>
@@ -221,8 +221,8 @@
                                     <img src="../img/notfound.svg" width="25%">
                                     
                                     <br>
-                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
-                                    <a class="non-style-link" href="patient.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Patients &nbsp;</font></button>
+                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">No pudimos encontrar el paciente !</p>
+                                    <a class="non-style-link" href="patient.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Ver todos los pacientes &nbsp;</font></button>
                                     </a>
                                     </center>
                                     <br><br><br><br>
@@ -259,7 +259,7 @@
                                         <td >
                                         <div style="display:flex;justify-content: center;">
                                         
-                                        <a href="?action=view&id='.$pid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                        <a href="?action=view&id='.$pid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Ver</font></button></a>
                                        
                                         </div>
                                         </td>
@@ -310,7 +310,7 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">Informacion.</p><br><br>
                                 </td>
                             </tr>
                             <tr>

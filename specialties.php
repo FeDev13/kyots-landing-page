@@ -72,7 +72,7 @@
               </li>
               <li>
                 <a
-                  href="create-account.php"
+                  href="signup.php"
                   class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                   >Registrarse</a
                 >
@@ -152,9 +152,9 @@
             include("connection.php");
             $list = $database->query("SELECT id, sname from specialties;");
             if ($list->num_rows > 0) {
-            echo"<ul class = 'grid grid-cols-3 mt-20'>";
+            echo"<ul class = 'grid grid-cols-1 md:grid md:grid-cols-3 mt-20'>";
             while($row= $list->fetch_assoc()){
-                echo "<li class='text-xl leading-loose '> ". $row["sname"] . "</li>";
+                echo "<li class='text-xl leading-loose shadow-2xl rounded-lg '> ". $row["sname"] . "</li>";
             }
             echo "</ul>";
             }else {
@@ -162,7 +162,7 @@
             }
         ?>  
     </div>
-    <footer class="bg-blue-900 h-96 text-white text-xl">
+    <footer class="bg-blue-900 min-h-screen mt-auto text-white text-xl">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
@@ -191,7 +191,7 @@
             </div>
           </div>
           <div>
-            <span class="text-white font-bold tracking-wide "
+            <span class="text-white font-bold tracking-wide"
               >Encontranos en</span
             >
             <div class="flex items-center mt-1 space-x-3">
@@ -312,8 +312,8 @@
                   aria-label="WhatsApp"
                   role="img"
                   viewBox="0 0 512 512"
-                  width="45px"
-                  height="45px"
+                  width="38px"
+                  height="38px"
                   fill="#000000"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -341,6 +341,43 @@
                     ></path>
                   </g>
                 </svg>
+              </a>
+              <a href="https://twitter.com/Kytossalud"
+                ><img src="./img/xlogo.png" alt="x logo"
+              /></a>
+              <a href="">
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 256 256"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M241.871,256.001 C249.673,256.001 256,249.675 256,241.872 L256,14.129 C256,6.325 249.673,0 241.871,0 L14.129,0 C6.324,0 0,6.325 0,14.129 L0,241.872 C0,249.675 6.324,256.001 14.129,256.001 L241.871,256.001"
+                        fill="#395185"
+                      ></path>
+                      <path
+                        d="M176.635,256.001 L176.635,156.864 L209.912,156.864 L214.894,118.229 L176.635,118.229 L176.635,93.561 C176.635,82.375 179.742,74.752 195.783,74.752 L216.242,74.743 L216.242,40.188 C212.702,39.717 200.558,38.665 186.43,38.665 C156.932,38.665 136.738,56.67 136.738,89.736 L136.738,118.229 L103.376,118.229 L103.376,156.864 L136.738,156.864 L136.738,256.001 L176.635,256.001"
+                        fill="#FFFFFF"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="">
+                <img src="./img/linktree.png" alt="" />
               </a>
             </div>
           </div>

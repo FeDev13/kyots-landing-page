@@ -65,7 +65,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                    <a href="../logout.php" ><input type="button" value="cerrar sesion" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                     </table>
@@ -73,7 +73,7 @@
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-dashbord" >
-                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">Dashboard</p></a></div></a>
+                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text"></p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
@@ -92,11 +92,7 @@
                         <a href="patient.php" class="non-style-link-menu  non-style-link-menu-active"><div><p class="menu-text">My Patients</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings   ">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>

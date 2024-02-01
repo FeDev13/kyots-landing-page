@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Doctors</title>
+    <title>Pacientes</title>
     <style>
         .popup{
             animation: transitionIn-Y-bottom 0.5s;
@@ -62,7 +62,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                <a href="../logout.php" ><input type="button" value="cerrar sesion" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                     </table>
@@ -76,25 +76,21 @@
                 </tr>
                 <tr class="menu-row">
                     <td class="menu-btn menu-icon-doctor menu-active menu-icon-doctor-active">
-                        <a href="doctors.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">All Doctors</p></a></div>
+                        <a href="doctors.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Profesionales</p></a></div>
                     </td>
                 </tr>
                 
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-session">
-                        <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">Scheduled Sessions</p></div></a>
+                        <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">Agendar sesion</p></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-appoinment">
-                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">My Bookings</p></a></div>
+                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">Mis turnos</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>
@@ -102,13 +98,13 @@
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%">
-                        <a href="doctors.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
+                        <a href="doctors.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Atras</font></button></a>
                     </td>
                     <td>
                         
                         <form action="" method="post" class="header-search">
 
-                            <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Doctor name or Email" list="doctors">&nbsp;&nbsp;
+                            <input type="search" name="search" class="input-text header-searchbar" placeholder="Buscar profesional" list="doctors">&nbsp;&nbsp;
                             
                             <?php
                                 echo '<datalist id="doctors">';
@@ -126,21 +122,21 @@
 ?>
                             
                        
-                            <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                            <input type="Submit" value="Buscar" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                         
                         </form>
                         
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
-                            Today's Date
+                            Hoy es
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
-                        date_default_timezone_set('Asia/Kolkata');
+                         date_default_timezone_set('America/Argentina/Buenos_Aires');
 
-                        $date = date('Y-m-d');
-                        echo $date;
+                         $today = date('d-m-Y');
+                        echo $today;
                         ?>
                         </p>
                     </td>
@@ -154,7 +150,7 @@
                 
                 <tr>
                     <td colspan="4" style="padding-top:10px;">
-                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">All Doctors (<?php echo $list11->num_rows; ?>)</p>
+                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">Mis profesionales (<?php echo $list11->num_rows; ?>)</p>
                     </td>
                     
                 </tr>
@@ -182,7 +178,7 @@
                                 <th class="table-headin">
                                     
                                 
-                                Doctor Name
+                                Profesional
                                 
                                 </th>
                                 <th class="table-headin">
@@ -190,12 +186,12 @@
                                 </th>
                                 <th class="table-headin">
                                     
-                                    Specialties
+                                    Especialidad
                                     
                                 </th>
                                 <th class="table-headin">
                                     
-                                    Events
+                                    Notas
                                     
                                 </tr>
                         </thead>
@@ -214,8 +210,8 @@
                                     <img src="../img/notfound.svg" width="25%">
                                     
                                     <br>
-                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
-                                    <a class="non-style-link" href="doctors.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Doctors &nbsp;</font></button>
+                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">No pudimos encontrar información!</p>
+                                    <a class="non-style-link" href="doctors.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Ver profesionales &nbsp;</font></button>
                                     </a>
                                     </center>
                                     <br><br><br><br>
@@ -247,9 +243,9 @@
                                         <td>
                                         <div style="display:flex;justify-content: center;">
                                         
-                                        <a href="?action=view&id='.$docid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                        <a href="?action=view&id='.$docid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Ver profesional</font></button></a>
                                        &nbsp;&nbsp;&nbsp;
-                                       <a href="?action=session&id='.$docid.'&name='.$name.'"  class="non-style-link"><button  class="btn-primary-soft btn button-icon menu-icon-session-active"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                       <a href="?action=session&id='.$docid.'&name='.$name.'"  class="non-style-link"><button  class="btn-primary-soft btn button-icon menu-icon-session-active"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sesiones</font></button></a>
                                         </div>
                                         </td>
                                     </tr>';
@@ -318,7 +314,7 @@
                         <h2></h2>
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            Kytos<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
@@ -326,14 +322,14 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">Detalles del profesional.</p><br><br>
                                 </td>
                             </tr>
                             
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Name: </label>
+                                    <label for="name" class="form-label">Nombre: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -352,11 +348,7 @@
                                 '.$email.'<br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <td class="label-td" colspan="2">
                                 '.$nic.'<br><br>
@@ -364,7 +356,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="Tele" class="form-label">Telephone: </label>
+                                    <label for="Tele" class="form-label">Telefono: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -374,7 +366,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="spec" class="form-label">Specialties: </label>
+                                    <label for="spec" class="form-label">Especialidad: </label>
                                     
                                 </td>
                             </tr>
@@ -406,10 +398,10 @@
             <div id="popup1" class="overlay">
                     <div class="popup">
                     <center>
-                        <h2>Redirect to Doctors sessions?</h2>
+                        <h2>Ir a agendar sesion?</h2>
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
-                            You want to view All sessions by <br>('.substr($name,0,40).').
+                            Ud quiere ver todos los turnos disponibles de <br>'.substr($name,0,40).'.
                             
                         </div>
                         <form action="schedule.php" method="post" style="display: flex">
@@ -419,7 +411,7 @@
                                 
                         <div style="display: flex;justify-content:center;margin-left:45%;margin-top:6%;;margin-bottom:6%;">
                         
-                        <input type="submit"  value="Yes" class="btn-primary btn"   >
+                        <input type="submit"  value="Ok" class="btn-primary btn"   >
                         
                         
                         </div>

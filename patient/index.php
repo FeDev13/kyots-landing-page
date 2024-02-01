@@ -98,11 +98,7 @@
                         <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">Mis citas</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Configuracion</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>
@@ -219,7 +215,7 @@
                                                                     <?php    echo $doctorrow->num_rows  ?>
                                                                 </div><br>
                                                                 <div class="h3-dashboard">
-                                                                    Mis profesionales &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    Profesionales &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 </div>
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="background-image: url('../img/icons/doctors-hover.svg');"></div>

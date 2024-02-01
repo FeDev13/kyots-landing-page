@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/login.css">
@@ -116,7 +117,7 @@
 
 
     <center>
-    <div class="container">
+    <div class ="md:w-[50%]">
         <table border="0" style="margin: 0;padding: 0;width: 60%;">
             <tr>
                 <td>
@@ -171,6 +172,7 @@
                     <label for="" class="sub-text" style="font-weight: 280;">No esta registrado&#63; </label>
                     <a href="signup.php" class="hover-link1 non-style-link">Registrese</a>
                     <br><br><br>
+                    <a href="index.html" class="hover-link1 non-style-link">ir al inicio</a>
                 </td>
             </tr>
                         

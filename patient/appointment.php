@@ -115,11 +115,7 @@
                         <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">Mis citas</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Configuracion</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>
@@ -140,9 +136,9 @@
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
 
-                        date_default_timezone_set('Asia/Kolkata');
+                        date_default_timezone_set('America/Argentina/Buenos_Aires');
 
-                        $today = date('d-m-Y');
+                        $today = date('d-m-Y');;
                         echo $today;
 
                         
@@ -226,7 +222,7 @@
                                     <img src="../img/notfound.svg" width="25%">
                                     
                                     <br>
-                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
+                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">No pudimos encontrar información !</p>
                                     <a class="non-style-link" href="appointment.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Ver todas las consultas &nbsp;</font></button>
                                     </a>
                                     </center>

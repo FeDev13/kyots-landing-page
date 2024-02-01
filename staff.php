@@ -73,7 +73,7 @@
               </li>
               <li>
                 <a
-                  href="create-account.php"
+                  href="signup.php"
                   class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                   >Registrarse</a
                 >
@@ -143,8 +143,16 @@
         </div>
       </nav>
     </div>
-    <h1>Los profesionales del staff Kytos</h1>
-    <div class="p-8 grid gap-6 mt-8 sm:grid-cols-3">
+    <h1
+          class=" text-center relative max-w-lg mb-20 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none mx-auto"
+        >
+          PROFESIONALES
+          <span
+            class="text-blue-500 uppercase absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 rounded-full"
+            ></span
+          >
+        </h1>
+    <div class="p-8 grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3">
         <div class="p-2">
             <img src="./img/sofim.png" alt="foto de staff" class="w-[50%] shadow-2xl">
         </div>
@@ -167,7 +175,7 @@
             <img src="./img/escribano.png" alt="foto de staff" class="w-[50%] shadow-2xl">
         </div>
    </div>
-   <footer class="bg-blue-300 h-96 text-black text-xl">
+   <footer class="bg-blue-900 min-h-screen mt-auto text-white text-xl">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
@@ -176,27 +184,27 @@
             <img src="./img/logo.jpg" class="w-[50%] rounded-lg" alt="" />
           </div>
           <div class="space-y-2 text-sm">
-            <p class="text-black font-bold tracking-wide text-xl">Contacto</p>
+            <p class="text-white font-bold tracking-wide text-xl">Contacto</p>
             <div class="flex">
-              <p class="mr-1 text-black text-xl">Telefono:</p>
+              <p class="mr-1 text-white text-xl">Telefono:</p>
               <p class="text-xl">2235915750</p>
             </div>
 
             <div class="flex">
-              <p class="mr-1 text-black text-xl">Direccion:</p>
+              <p class="mr-1 text-white text-xl">Direccion:</p>
               <p class="text-xl">Edison 2044, Mar del Plata</p>
             </div>
-            <p class="text-black font-bold tracking-wide text-xl">
+            <p class="text-white font-bold tracking-wide text-xl">
               Nuestros horarios
             </p>
             <div class="flex">
-              <p class="mr-1 text-black text-xl">
+              <p class="mr-1 text-white text-xl">
                 Lunes a viernes de 8 hrs a 12 hrs - 16 hrs a 20 hrs
               </p>
             </div>
           </div>
           <div>
-            <span class="text-black font-bold tracking-wide text-black"
+            <span class="text-white font-bold tracking-wide "
               >Encontranos en</span
             >
             <div class="flex items-center mt-1 space-x-3">
@@ -352,6 +360,7 @@
         </div>
       </div>
     </footer>
+      
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </body>
 </html>

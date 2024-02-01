@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
@@ -55,7 +56,7 @@ if($_POST){
 
 
     <center>
-    <div class="container">
+    <div >
         <table border="0">
             <tr>
                 <td colspan="2">
@@ -126,6 +127,10 @@ if($_POST){
                     <br>
                     <label for="" class="sub-text" style="font-weight: 280;">Ya es paciente&#63; </label>
                     <a href="login.php" class="hover-link1 non-style-link">Ingrese</a>
+                    <br><br><br>
+                    <br>
+                    <a href="index.html" class="hover-link1 non-style-link">Volver al inicio</a>
+                    
                     <br><br><br>
                 </td>
             </tr>

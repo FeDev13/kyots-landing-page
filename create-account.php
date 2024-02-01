@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
@@ -89,8 +90,8 @@ if($_POST){
 
 
     <center>
-    <div class="container">
-        <table border="0" style="width: 69%;">
+    <div>
+        <table border="0" class="w-[80%] md:w-[30%]">
             <tr>
                 <td colspan="2">
                     <p class="header-text">Registrarse como paciente</p>
@@ -116,7 +117,7 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="tel" name="tele" class="input-text"  placeholder="ex: 0712345678"  >
+                    <input type="tel" name="tele" class="input-text"  >
                 </td>
             </tr>
             <tr>
@@ -153,7 +154,7 @@ if($_POST){
                     <input type="reset" value="Limpiar campos" class="login-btn btn-primary-soft btn" >
                 </td>
                 <td>
-                    <input type="submit" value="Registrarse" class="login-btn btn-primary btn">
+                    <input type="submit" value="Registrarse" class="bg-sky-600 rounded-md p-2 text-white cursor-pointer">
                 </td>
 
             </tr>
@@ -161,7 +162,11 @@ if($_POST){
                 <td colspan="2">
                     <br>
                     <label for="" class="sub-text" style="font-weight: 280;">Ya es paciente&#63; </label>
-                    <a href="login.php" class="hover-link1 non-style-link">Login</a>
+                    <a href="login.php" class="hover-link1 non-style-link">Ingresar</a>
+                    <br><br><br>
+                    <br>
+                    <a href="index.html" class="hover-link1 non-style-link">Volver al inicio</a>
+                    
                     <br><br><br>
                 </td>
             </tr>
