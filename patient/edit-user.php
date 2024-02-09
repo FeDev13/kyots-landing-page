@@ -1,12 +1,6 @@
 
     <?php
-    
-    
-
-    //import database
-    include("../connection.php");
-
-
+   include("../connection.php");
 
     if($_POST){
         //print_r($_POST);

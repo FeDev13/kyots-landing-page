@@ -357,10 +357,10 @@
                     <div class="popup">
                     <center>
                     <br><br>
-                        <h2>Booking Successfully.</h2>
+                        <h2>Turno agendado.</h2>
                         <a class="close" href="appointment.php">&times;</a>
                         <div class="content">
-                        Your Appointment number is '.$id.'.<br><br>
+                        Su numero de turno es'.$id.'.<br><br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">

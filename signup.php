@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/animations.css">  
-    <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/signup.css">
-        
-    <title>Sign Up</title>
-    
-</head>
-<body>
 <?php
-
-//learn from w3schools.com
-//Unset all the server side variables
-
+ob_start();
 session_start();
-
 $_SESSION["user"]="";
 $_SESSION["usertype"]="";
-
-// Set the new timezone
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 $date = date('d-m-Y');
-
 $_SESSION["date"]=$date;
 
 
@@ -47,14 +25,24 @@ if($_POST){
     print_r($_SESSION["personal"]);
     header("location: create-account.php");
 
-
-
-
 }
-
+ob_end_flush();
 ?>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/animations.css">  
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/signup.css">
+        
+    <title>Sign Up</title>
+    
+</head>
+<body>
     <center>
     <div >
         <table border="0">

@@ -152,27 +152,120 @@
             ></span
           >
         </h1>
-    <div class="p-8 grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3">
+    <div class="p-8 grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 items-center justify-center mx-auto">
         <div class="p-2">
-            <img src="./img/sofim.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/sofim.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/agus.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/agus.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/cecil.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/cecil.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/lourdes.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/lourdes.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/mjfranco.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/mjfranco.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/pasarelli.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/pasarelli.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
         <div class="p-2">
-            <img src="./img/escribano.png" alt="foto de staff" class="w-[50%] shadow-2xl">
+            <img src="./img/escribano.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/ali.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/verano.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/lopez.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/ali.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/facioni.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/bou.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/castro.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/rivera.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/prieto.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/campins.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/braschi.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/noto.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/guinazu.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/peppino.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/barcellandi.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/delfiore.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/dimattia.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/dinapoli.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/echevarria.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/gonzalez.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/gimenez.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/marinangeli.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/molina.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/montano.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/sedano.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/signes.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/teerink.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/uriarte.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/cantarellafix.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/caponifix.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
+        </div>
+        <div class="p-2">
+            <img src="./img/caputifix.png" alt="foto de staff" class="w-[50%] shadow-2xl mx-auto">
         </div>
    </div>
    <footer class="bg-blue-900 min-h-screen mt-auto text-white text-xl">
@@ -204,7 +297,7 @@
             </div>
           </div>
           <div>
-            <span class="text-white font-bold tracking-wide "
+            <span class="text-white font-bold tracking-wide"
               >Encontranos en</span
             >
             <div class="flex items-center mt-1 space-x-3">
@@ -325,8 +418,8 @@
                   aria-label="WhatsApp"
                   role="img"
                   viewBox="0 0 512 512"
-                  width="45px"
-                  height="45px"
+                  width="38px"
+                  height="38px"
                   fill="#000000"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -354,6 +447,45 @@
                     ></path>
                   </g>
                 </svg>
+              </a>
+              <a href="https://twitter.com/Kytossalud"
+                ><img src="./img/xlogo.png" alt="x logo"
+              /></a>
+              <a
+                href="https://www.facebook.com/kytossaludintegral?mibextid=ZbWKwL"
+              >
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 256 256"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M241.871,256.001 C249.673,256.001 256,249.675 256,241.872 L256,14.129 C256,6.325 249.673,0 241.871,0 L14.129,0 C6.324,0 0,6.325 0,14.129 L0,241.872 C0,249.675 6.324,256.001 14.129,256.001 L241.871,256.001"
+                        fill="#395185"
+                      ></path>
+                      <path
+                        d="M176.635,256.001 L176.635,156.864 L209.912,156.864 L214.894,118.229 L176.635,118.229 L176.635,93.561 C176.635,82.375 179.742,74.752 195.783,74.752 L216.242,74.743 L216.242,40.188 C212.702,39.717 200.558,38.665 186.43,38.665 C156.932,38.665 136.738,56.67 136.738,89.736 L136.738,118.229 L103.376,118.229 L103.376,156.864 L136.738,156.864 L136.738,256.001 L176.635,256.001"
+                        fill="#FFFFFF"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="https://linktr.ee/kytossaludintegral">
+                <img src="./img/linktree.png" alt="" />
               </a>
             </div>
           </div>

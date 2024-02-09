@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/animations.css">  
-    <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/login.css">
-        
-    <title>Login</title>
-
-    
-    
-</head>
-<body>
-    <?php
-
-    //learn from w3schools.com
-    //Unset all the server side variables
-
-    session_start();
-
+<?php
+session_start();
     $_SESSION["user"]="";
     $_SESSION["usertype"]="";
-    
-    // Set the new timezone
     date_default_timezone_set('America/Argentina/Buenos_Aires');
     $date = date('d-m-Y');
 
@@ -61,7 +37,7 @@
                     header('location: patient/index.php');
 
                 }else{
-                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Error! Revise el usuario o contraseña</label>';
                 }
 
             }elseif($utype=='a'){
@@ -76,7 +52,7 @@
                     header('location: admin/index.php');
 
                 }else{
-                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Error! Revise su usuario o contraseña</label>';
                 }
 
 
@@ -91,13 +67,13 @@
                     header('location: doctor/index.php');
 
                 }else{
-                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Error! Revise su usuario o contraseña</label>';
                 }
 
             }
             
         }else{
-            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We cant found any acount for this email.</label>';
+            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">No existe un usuario vinculado al mail ingresado.</label>';
         }
 
 
@@ -111,10 +87,23 @@
     }
 
     ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/animations.css">  
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/login.css">
+        
+    <title>Login</title>
 
-
-
-
+    
+    
+</head>
+<body>
 
     <center>
     <div class ="md:w-[50%]">
@@ -162,7 +151,7 @@
 
             <tr>
                 <td>
-                    <input type="submit" value="Login" class="login-btn btn-primary btn">
+                    <input type="submit" value="Login" class="rounded-md bg-sky-600 p-2 cursor-pointer text-white w-full">
                 </td>
             </tr>
         </div>

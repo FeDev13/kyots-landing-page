@@ -8,6 +8,13 @@ body {
   flex-wrap: wrap;
   height: 100vh;
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .menu {
   border-right: 1.5px solid rgb(235, 235, 235);
   width: 24%;

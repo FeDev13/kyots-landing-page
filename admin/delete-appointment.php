@@ -1,8 +1,6 @@
 <?php
-
-    session_start();
-
-    if(isset($_SESSION["user"])){
+session_start();
+if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='a'){
             header("location: ../login.php");
         }
@@ -23,6 +21,4 @@
         //print_r($email);
         header("location: appointment.php");
     }
-
-
 ?>

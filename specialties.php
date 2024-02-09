@@ -345,7 +345,9 @@
               <a href="https://twitter.com/Kytossalud"
                 ><img src="./img/xlogo.png" alt="x logo"
               /></a>
-              <a href="">
+              <a
+                href="https://www.facebook.com/kytossaludintegral?mibextid=ZbWKwL"
+              >
                 <svg
                   width="40px"
                   height="40px"
@@ -376,7 +378,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="">
+              <a href="https://linktr.ee/kytossaludintegral">
                 <img src="./img/linktree.png" alt="" />
               </a>
             </div>

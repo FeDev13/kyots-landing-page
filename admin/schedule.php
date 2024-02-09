@@ -1,3 +1,17 @@
+<?php
+ob_start();
+session_start();
+if(isset($_SESSION["user"])){
+        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='a'){
+            header("location: ../login.php");
+        }
+
+    }else{
+        header("location: ../login.php");
+    }
+    include("../connection.php");
+ob_end_flush();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,28 +33,7 @@
 </style>
 </head>
 <body>
-    <?php
-
-    //learn from w3schools.com
-
-    session_start();
-
-    if(isset($_SESSION["user"])){
-        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='a'){
-            header("location: ../login.php");
-        }
-
-    }else{
-        header("location: ../login.php");
-    }
     
-    
-
-    //import database
-    include("../connection.php");
-
-    
-    ?>
     <div class="container">
         <div class="menu">
             <table class="menu-container" border="0">
@@ -474,7 +467,7 @@
                         <h2>Consulta agendada.</h2>
                         <a class="close" href="schedule.php">&times;</a>
                         <div class="content">
-                        '.substr($titleget,0,40).' was scheduled.<br><br>
+                        '.substr($titleget,0,40).' ha sido agregada.<br><br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
@@ -492,10 +485,10 @@
             <div id="popup1" class="overlay">
                     <div class="popup">
                     <center>
-                        <h2>Are you sure?</h2>
+                        <h2>Desea continuar?</h2>
                         <a class="close" href="schedule.php">&times;</a>
                         <div class="content">
-                            You want to delete this record<br>('.substr($nameget,0,40).').
+                            Quiere borrar este dato?<br>('.substr($nameget,0,40).').
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
@@ -632,7 +625,7 @@
                                              <img src="../img/notfound.svg" width="25%">
                                              
                                              <br>
-                                             <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
+                                             <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">No pudimos encontrar datos !</p>
                                              <a class="non-style-link" href="appointment.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Ver todas &nbsp;</font></button>
                                              </a>
                                              </center>

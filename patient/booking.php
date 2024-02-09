@@ -1,3 +1,28 @@
+<?php
+session_start();
+if(isset($_SESSION["user"])){
+        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='p'){
+            header("location: ../login.php");
+        }else{
+            $useremail=$_SESSION["user"];
+        }
+
+    }else{
+        header("location: ../login.php");
+    }
+    
+
+    //import database
+    include("../connection.php");
+    $userrow = $database->query("select * from patient where pemail='$useremail'");
+    $userfetch=$userrow->fetch_assoc();
+    $userid= $userfetch["pid"];
+    $username=$userfetch["pname"];
+
+    date_default_timezone_set('Asia/Kolkata');
+
+    $today = date('d-m-Y');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,44 +44,7 @@
 </style>
 </head>
 <body>
-    <?php
-
-    //learn from w3schools.com
-
-    session_start();
-
-    if(isset($_SESSION["user"])){
-        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='p'){
-            header("location: ../login.php");
-        }else{
-            $useremail=$_SESSION["user"];
-        }
-
-    }else{
-        header("location: ../login.php");
-    }
     
-
-    //import database
-    include("../connection.php");
-    $userrow = $database->query("select * from patient where pemail='$useremail'");
-    $userfetch=$userrow->fetch_assoc();
-    $userid= $userfetch["pid"];
-    $username=$userfetch["pname"];
-
-
-    //echo $userid;
-    //echo $username;
-    
-
-
-    date_default_timezone_set('Asia/Kolkata');
-
-    $today = date('d-m-Y');
-
-
- //echo $userid;
- ?>
  <div class="container">
      <div class="menu">
      <table class="menu-container" border="0">
@@ -238,7 +226,7 @@
                                             
                                                 <div style="width:100%">
                                                         <div class="h1-search" style="font-size:25px;">
-                                                            Inormacion de la consulta
+                                                            Informacion de la consulta
                                                         </div><br><br>
                                                         <div class="h3-search" style="font-size:18px;line-height:30px">
                                                             Profesional:  &nbsp;&nbsp;<b>'.$docname.'</b><br>

@@ -1,10 +1,6 @@
 <?php
-
-    //learn from w3schools.com
-
-    session_start();
-
-    if(isset($_SESSION["user"])){
+session_start();
+if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='p'){
             header("location: ../login.php");
         }else{
@@ -34,7 +30,6 @@
             $result= $database->query($sql2);
             //echo $apponom;
             header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
-
         }
     }
  ?>
